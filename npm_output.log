@@ -1,0 +1,45 @@
+
+> pcf-validator@0.0.0 dev
+> vite
+
+
+  VITE v7.3.1  ready in 542 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+3:55:42 PM [vite] (client) Pre-transform error: Failed to resolve import "../schema/pcfSchema" from "src/store.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /app/pcf-validator/src/store.js:2:50
+  1  |  import { z } from 'zod';
+  2  |  import { pcfRowSchema, pcfDataTableSchema } from '../schema/pcfSchema';
+     |                                                    ^
+  3  |  import { runSmartFix } from '../engine/smartFixOrchestrator';
+  4  |  import { applyFixes } from '../engine/fixApplication';
+3:55:42 PM [vite] Internal server error: Failed to resolve import "../schema/pcfSchema" from "src/store.js". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /app/pcf-validator/src/store.js:2:50
+  1  |  import { z } from 'zod';
+  2  |  import { pcfRowSchema, pcfDataTableSchema } from '../schema/pcfSchema';
+     |                                                    ^
+  3  |  import { runSmartFix } from '../engine/smartFixOrchestrator';
+  4  |  import { applyFixes } from '../engine/fixApplication';
+      at TransformPluginContext._formatLog (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:28999:43)
+      at TransformPluginContext.error (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:28996:14)
+      at normalizeUrl (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:27119:18)
+      at async file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:27177:32
+      at async Promise.all (index 1)
+      at async TransformPluginContext.transform (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:27145:4)
+      at async EnvironmentPluginContainer.transform (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:28797:14)
+      at async loadAndTransform (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:22670:26)
+      at async viteTransformMiddleware (file:///app/pcf-validator/node_modules/vite/dist/node/chunks/config.js:24542:20)
+3:57:18 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:58:24 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:58:24 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:58:24 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:58:24 PM [vite] (client) hmr update /src/index.css, /src/App.jsx
+3:58:24 PM [vite] (client) hmr update /src/index.css, /src/App.jsx
+3:58:24 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:59:13 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:59:13 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
+3:59:13 PM [vite] (client) hmr update /src/index.css, /src/App.jsx
+3:59:40 PM [vite] (client) hmr update /src/App.jsx, /src/index.css
